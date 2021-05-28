@@ -34,7 +34,7 @@ namespace EsercitazioneW2
                 }
                 t.DataScadenza = scadenza;
                 //enum
-                Console.WriteLine("Inserisci livello importanza:");
+                Console.WriteLine("Inserisci livello importanza:: inserisci 0, 1, 2 per");
                 int[] values = new int[] { 0, 1, 2 };
                 foreach (int enumValue in values)
                 {
@@ -75,7 +75,7 @@ namespace EsercitazioneW2
                         Console.WriteLine("I task marcati con Importanza Alta sono");
                         foreach (Task t in tasks)
                         {
-                            if (t.Importance == Importanza.UNO)
+                            if (t.Importance == Importanza.ALTA )
                                 Console.WriteLine(t);
                         }
                         break;
@@ -84,7 +84,7 @@ namespace EsercitazioneW2
                         Console.WriteLine("I task marcati con Importanza Media sono");
                         foreach (Task t in tasks)
                         {
-                            if (t.Importance == Importanza.DUE)
+                            if (t.Importance == Importanza.MEDIA)
                                 Console.WriteLine(t);
                         }
                         break;
@@ -93,13 +93,13 @@ namespace EsercitazioneW2
                         Console.WriteLine("I task marcati con Importanza Bassa sono");
                         foreach (Task t in tasks)
                         {
-                            if (t.Importance == Importanza.TRE)
+                            if (t.Importance == Importanza.BASSA)
                                 Console.WriteLine(t);
                         }
                         break;
                     default: 
                         continua = false;
-                        Console.WriteLine("Grazie, Arrivederci");
+                        Console.WriteLine("Cosa vuoi fare?");
                         break;
                 }
             }
@@ -108,7 +108,7 @@ namespace EsercitazioneW2
 
         public static int OpzioniImportanza()
         {
-                Console.WriteLine("Seleziona importanza: \n-Premi 1 per Alta\n -Premi 2 per Media\n -Premi 3 per bassa");
+                Console.WriteLine("Seleziona importanza: \n -Premi 1 per Alta\n -Premi 2 per Media\n -Premi 3 per bassa \n -Premi 4 Per uscire");
             int a = 0;
             try
              {
@@ -117,10 +117,10 @@ namespace EsercitazioneW2
              catch (Exception)
              {
                  Console.WriteLine("Inserisci un numero corretto");
-                a = 0;
+                 a = 0;
              }
              return a;
-            }
+        }
 
 
 
@@ -128,7 +128,12 @@ namespace EsercitazioneW2
 
         public static Task ScegliTask(ArrayList tasks)
         {
-            Console.WriteLine("Inserisci numero identificativo del task da gestire: ");
+            foreach (Task t in tasks)
+            {
+                Console.WriteLine(t);
+            }
+
+            Console.WriteLine("Inserisci numero identificativo del task da eliminare: ");
 
             int numeroid = VerificaValidita();
             foreach (Task t in tasks)

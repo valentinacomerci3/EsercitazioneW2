@@ -28,6 +28,7 @@ namespace EsercitazioneW2
                         {
                             tasks.Remove(taskDaEliminare);
                             TaskFileIO.StampaSuFile(tasks);
+                            Console.WriteLine("Task Eliminato con Successo");
 
                         }
                         catch (Exception)
@@ -41,7 +42,7 @@ namespace EsercitazioneW2
                         TaskFileIO.StampaSuFile(tasks);
                         break;
                     case 5:
-                        HandlingTasks.StampaImportanza(tasks);
+                        HandlingTasks.StampaImportanza(tasks) ;
                         break;
                     case 0: //per eccezione
                         break;

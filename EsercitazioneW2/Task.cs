@@ -8,9 +8,9 @@ namespace EsercitazioneW2
 {
     public enum Importanza
     {
-        UNO,
-        DUE,
-        TRE,
+        ALTA ,
+        MEDIA,
+        BASSA,
         //EURO4
     }
     public class Task

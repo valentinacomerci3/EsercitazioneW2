@@ -108,7 +108,7 @@ namespace EsercitazioneW2
 
         public static int OpzioniImportanza()
         {
-                Console.WriteLine("Seleziona importanza: -Premi 1 per Alta\n -Premi 2 per Media\n -Premi 3 per bassa");
+                Console.WriteLine("Seleziona importanza: \n-Premi 1 per Alta\n -Premi 2 per Media\n -Premi 3 per bassa");
             int a = 0;
             try
              {

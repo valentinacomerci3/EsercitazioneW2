@@ -60,7 +60,7 @@ namespace EsercitazioneW2
             Console.WriteLine("2. Visualizza tutti i tuoi task");
             Console.WriteLine("3. Elimina un task");
             Console.WriteLine("4. Salva tutti i tuoi task su file");
-            Console.WriteLine("5. Salva tutti i tuoi task su file");
+            Console.WriteLine("5. Visualizza per importanza");
             Console.WriteLine("6. Per uscire");
             int scelta = 0;
             try

@@ -59,6 +59,70 @@ namespace EsercitazioneW2
             }
         }
 
+        //stampa task a video based on importance
+        public static void StampaImportanza(ArrayList tasks)
+            
+        {
+            bool continua = true;
+            while (continua)
+            {
+                int a = OpzioniImportanza();
+                
+
+                switch (a)
+                {
+                    case 1:
+                        Console.WriteLine("I task marcati con Importanza Alta sono");
+                        foreach (Task t in tasks)
+                        {
+                            if (t.Importance == Importanza.UNO)
+                                Console.WriteLine(t);
+                        }
+                        break;
+                    case 2:
+
+                        Console.WriteLine("I task marcati con Importanza Media sono");
+                        foreach (Task t in tasks)
+                        {
+                            if (t.Importance == Importanza.DUE)
+                                Console.WriteLine(t);
+                        }
+                        break;
+                    case 3:
+
+                        Console.WriteLine("I task marcati con Importanza Bassa sono");
+                        foreach (Task t in tasks)
+                        {
+                            if (t.Importance == Importanza.TRE)
+                                Console.WriteLine(t);
+                        }
+                        break;
+                    default: 
+                        continua = false;
+                        Console.WriteLine("Grazie, Arrivederci");
+                        break;
+                }
+            }
+
+        }
+
+        public static int OpzioniImportanza()
+        {
+                Console.WriteLine("Seleziona importanza: -Premi 1 per Alta\n -Premi 2 per Media\n -Premi 3 per bassa");
+            int a = 0;
+            try
+             {
+                 a = Convert.ToInt32(Console.ReadLine());
+             }
+             catch (Exception)
+             {
+                 Console.WriteLine("Inserisci un numero corretto");
+                a = 0;
+             }
+             return a;
+            }
+
+
 
         //Trova Task da gestire
 

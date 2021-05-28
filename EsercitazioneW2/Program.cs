@@ -40,9 +40,12 @@ namespace EsercitazioneW2
                     case 4:
                         TaskFileIO.StampaSuFile(tasks);
                         break;
-                    case 0: //casistica dell'eccezione
+                    case 5:
+                        HandlingTasks.StampaImportanza(tasks);
                         break;
-                    default: //un numero diverso da 0
+                    case 0: //per eccezione
+                        break;
+                    default: //numeri diversi da 012345 ma prompto user di inserire 6 
                         continua = false;
                         Console.WriteLine("Grazie, Arrivederci");
                         break;
@@ -57,7 +60,8 @@ namespace EsercitazioneW2
             Console.WriteLine("2. Visualizza tutti i tuoi task");
             Console.WriteLine("3. Elimina un task");
             Console.WriteLine("4. Salva tutti i tuoi task su file");
-            Console.WriteLine("5. Per uscire");
+            Console.WriteLine("5. Salva tutti i tuoi task su file");
+            Console.WriteLine("6. Per uscire");
             int scelta = 0;
             try
             {

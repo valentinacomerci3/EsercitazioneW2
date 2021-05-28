@@ -16,21 +16,23 @@ namespace EsercitazioneW2
                 switch (scelta)
                 {
                     case 1:
-                        Task taskDaAggiungere = HandlingTasks.InserisciTask();
+                        Task taskDaAggiungere = HandlingTasks.CompilazioneTask();
                         tasks.Add(taskDaAggiungere);
                         break;
                     case 2:
-                        HandlingTasks.StampaTasks(tasks);
+                        HandlingTasks.VisualizzaTasks(tasks);
                         break;
                     case 3:
-                        Task taskDaCancellare = HandlingTasks.CercaTask(tasks);
+                        Task taskDaEliminare = HandlingTasks.ScegliTask(tasks);
                         try
                         {
-                            tasks.Remove(taskDaCancellare);
+                            tasks.Remove(taskDaEliminare);
+                            TaskFileIO.StampaSuFile(tasks);
+
                         }
                         catch (Exception)
                         {
-                            Console.WriteLine("Veicolo non trovato");
+                            Console.WriteLine("Task non trovato");
 
                         }
 
@@ -42,7 +44,7 @@ namespace EsercitazioneW2
                         break;
                     default: //un numero diverso da 0
                         continua = false;
-                        Console.WriteLine("Arrivederci");
+                        Console.WriteLine("Grazie, Arrivederci");
                         break;
                 }
             }

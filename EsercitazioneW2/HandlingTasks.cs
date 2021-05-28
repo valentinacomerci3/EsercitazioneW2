@@ -12,14 +12,14 @@ namespace EsercitazioneW2
 
         //inserisci task
 
-        internal static Task InserisciTask()
+        internal static Task CompilazioneTask()
         {
             Task t = new Task();
             try
             {
                 bool success;
                 //int
-                Console.WriteLine("Inserisci numero identificativo di 4 cifre:");
+                Console.WriteLine("Inserisci un numero identificativo per il tuo task:");
                 t.NumeroIdentificativo = VerificaValidita();//check con funzione definita a parte
                 //string
                 Console.WriteLine("Inserisci descrizione");
@@ -50,8 +50,8 @@ namespace EsercitazioneW2
             return t;
         }
 
-        //stampa task
-        public static void StampaTasks(ArrayList tasks)
+        //stampa task a video
+        public static void VisualizzaTasks(ArrayList tasks)
         {
             foreach (Task t in tasks)
             {
@@ -62,7 +62,7 @@ namespace EsercitazioneW2
 
         //Trova Task da gestire
 
-        public static Task CercaTask(ArrayList tasks)
+        public static Task ScegliTask(ArrayList tasks)
         {
             Console.WriteLine("Inserisci numero identificativo del task da gestire: ");
 

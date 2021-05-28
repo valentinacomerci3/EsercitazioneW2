@@ -1,0 +1,16 @@
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\EsercitazioneW2.exe
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\EsercitazioneW2.deps.json
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\EsercitazioneW2.runtimeconfig.json
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\EsercitazioneW2.runtimeconfig.dev.json
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\EsercitazioneW2.dll
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\ref\EsercitazioneW2.dll
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\bin\Debug\net5.0\EsercitazioneW2.pdb
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.csprojAssemblyReference.cache
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.AssemblyInfoInputs.cache
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.AssemblyInfo.cs
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.csproj.CoreCompileInputs.cache
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.dll
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\ref\EsercitazioneW2.dll
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.pdb
+C:\Users\valentina.comerci\source\repos\EsercitazioneW2\EsercitazioneW2\obj\Debug\net5.0\EsercitazioneW2.genruntimeconfig.cache
